@@ -25,6 +25,152 @@ span {
 
 /* class selectors */
 .container {
+    height: 40%;
+    width: 60%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.title {
+    font-size: 5rem;
+    padding-bottom: 50px;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    animation: movee 5s infinite;
+}
+
+.fireworks {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer {
+    height: 20px;
+    margin-bottom: 580px;
+    color: antiquewhite;
+    text-align: center; 
+
+    font-family: 'Courier New', Courier, monospace;   
+}
+
+li {
+    display: inline-flex;
+    margin: 20px;  
+    height: 50px;  
+    width: 50px;  
+    border-radius: 500px;
+    position: relative;  
+    background-color: #8D6E63;  
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+
+li::before {
+    content:"";  
+    position: absolute;
+    height:100%;  
+    background-color: #212121;
+    width:100%;  
+    border-radius:500px;  
+    top:-40%;  
+    left:-30%;
+}
+li::after {
+    content:"";  
+    position:absolute;  
+    height:100%;  
+    background-color: #212121;  
+    width:100%;  
+    border-radius:500px;  
+    top:-40%;  
+    right:-30%;
+}
+
+/* others */
+@keyframes movee {
+    50% { text-shadow: 10px 10px 20px rgb(235, 101, 12);
+          color: #ff3c00;  
+    }    
+}
+
+@keyframes fire{  
+    0%,100%{  
+     transform:rotate(55deg);  
+     width:20px;  
+     background: linear-gradient(90deg,orange,orangered);  
+    }  
+    50%{  
+     transform:rotate(35deg);  
+     width:18px;  
+     background: linear-gradient(90deg,orangered,orange);  
+    }  
+}
+
+/* mobile devices */
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+/* ipads and tablets */
+@media (min-width: 481px) and (max-width: 1200px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+/* laptops */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .title {
+        font-size: 5rem;
+    }
+}
+/* desktops */
+@media (min-width: 1601px) {
+    .title {
+        font-size: 6rem;
+    }
+}
+
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+/* tag selectors */
+body {
+    background-color: #212121;
+    font-family: 'Sacramento',sans-serif;
+}
+
+span {
+    display: inline-block;  
+    height: 20px;  
+    width: 20px;  
+    position: absolute;  
+    left: 0;  
+    right: 0;  
+    margin: auto;  
+    z-index: 1;  
+    border-bottom-left-radius: 50px;  
+    border-bottom-right-radius: 50px;  
+    border-top-right-radius: 50px;
+    transform: rotate(45deg);  
+    animation: fire 0.3s ease infinite;
+}
+
+
+/* class selectors */
+.container {
     height: 400px;
     width: 600px;
     top: 0;
@@ -107,4 +253,4 @@ li::after {
      width:18px;  
      background: linear-gradient(90deg,orangered,orange);  
     }  
-   }
+   } */
