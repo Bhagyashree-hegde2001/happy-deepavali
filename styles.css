@@ -118,13 +118,13 @@ li::after {
 /* mobile devices */
 @media (max-width: 480px) {
     .title {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
 /* ipads and tablets */
 @media (min-width: 481px) and (max-width: 1200px) {
     .title {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
 /* laptops */
