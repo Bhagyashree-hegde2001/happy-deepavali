@@ -4,6 +4,9 @@
 body {
     background-color: #212121;
     font-family: 'Sacramento',sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 span {
@@ -27,19 +30,17 @@ span {
 .container {
     height: 40%;
     width: 60%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     margin: auto;
     position: relative;
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
 
 
 .title {
     font-size: 5rem;
+    padding-top: 20px;
     padding-bottom: 50px;
     color: rgba(255,255,255,0.5);
     text-align: center;
@@ -53,11 +54,12 @@ span {
 }
 
 .footer {
-    height: 20px;
-    margin-bottom: 580px;
+    /* height: 20px; */
+    /* margin-bottom: 580px; */
+    padding-bottom: 2%;
+    margin-top: auto;
     color: antiquewhite;
     text-align: center; 
-
     font-family: 'Courier New', Courier, monospace;   
 }
 
@@ -137,6 +139,8 @@ li::after {
         font-size: 6rem;
     }
 }
+
+
 
 
 
